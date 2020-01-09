@@ -15,6 +15,7 @@
 		01029ADB23C597FD00649F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01029AD923C597FD00649F3F /* Main.storyboard */; };
 		01029ADD23C5980000649F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01029ADC23C5980000649F3F /* Assets.xcassets */; };
 		01029AE023C5980000649F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01029ADE23C5980000649F3F /* LaunchScreen.storyboard */; };
+		01029AEA23C6DFAC00649F3F /* ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01029AE923C6DFAC00649F3F /* ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		01029ADC23C5980000649F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01029ADF23C5980000649F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01029AE123C5980000649F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01029AE923C6DFAC00649F3F /* ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				01029AD123C597FD00649F3F /* GameScene.sks */,
 				01029AD323C597FD00649F3F /* Actions.sks */,
 				01029AD523C597FD00649F3F /* GameScene.swift */,
+				01029AE923C6DFAC00649F3F /* ball.swift */,
 				01029AD723C597FD00649F3F /* GameViewController.swift */,
 				01029AD923C597FD00649F3F /* Main.storyboard */,
 				01029ADC23C5980000649F3F /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01029AEA23C6DFAC00649F3F /* ball.swift in Sources */,
 				01029AD623C597FD00649F3F /* GameScene.swift in Sources */,
 				01029AD823C597FD00649F3F /* GameViewController.swift in Sources */,
 				01029AD023C597FD00649F3F /* AppDelegate.swift in Sources */,
