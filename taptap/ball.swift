@@ -10,11 +10,11 @@ import SpriteKit
 
 
 class Ball: SKSpriteNode {
-    init(x: CGFloat, y: CGFloat) {
-        let texture = SKTexture(imageNamed: "red-ball")
-        let color = UIColor.clear
+    init() {
+        let color = UIColor.red
         
-        super.init(texture: texture, color: color, size: CGSize(width: 50, height: 50))
+        super.init(texture: nil, color: color, size: CGSize(width: 50, height: 50))
+        physicsBody = SKPhysicsBody(circleOfRadius: size.width/2)
         
     }
     
