@@ -11,6 +11,13 @@ import SpriteKit
 class GameScene: SKScene {
     
     var boundary = SKNode()
+    var currentNumberOfTouchesLabel: SKLabelNode!
+    var numberOfTouches = 0 {
+        didSet {
+            currentNumberOfTouchesLabel.text = "Number of Touches \(numberOfTouches)"
+        }
+    }
+    
     
     
     
@@ -26,6 +33,15 @@ class GameScene: SKScene {
         addChild(boundary)
         
         physicsWorld.contactDelegate = self
+        
+        
+     
+    
+        currentNumberOfTouchesLabel = SKLabelNode(fontNamed: "Helvetica")
+        currentNumberOfTouchesLabel.text = "Number of Touches: 0"
+        currentNumberOfTouchesLabel.horizontalAlignmentMode = .left
+        currentNumberOfTouchesLabel.position = CGPoint(x: 75, y: 1200)
+        addChild(currentNumberOfTouchesLabel)
         
         
         
@@ -70,9 +86,13 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         let location = touch.location(in: self)
+        numberOfTouches += 1
         
         
-        
+        let node = atPoint(location)
+        if node.name == "ball" {
+            node.removeFromParent()
+        }
         
 //        let radiusOfTouch: CGRect = CGRect(x: location.x, y: location.y, width: 100, height: 100)
         
